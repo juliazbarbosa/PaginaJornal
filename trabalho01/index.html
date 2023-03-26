@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,45 +10,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        body{
+        body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background-color: rgb(255, 250, 221);
-            margin:0px;
+            margin: 0px;
             font-size: x-large;
         }
 
-        .titulo{
+        .titulo {
             text-align: center;
             font-family: 'DM Serif Display', serif;
             margin: 0;
             padding-top: 15px;
         }
 
-        .container{
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-around;
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
         }
-        .nav{
+
+        .nav {
             width: 100%;
             height: 100px;
             background-color: rgb(9, 58, 133);
         }
-      </style>
-        <div class="nav">
-            <h1 class="titulo"><b>Classificados</b></h1>
-        </div>
-        <br>
-    <h2></h2>
+
+        .card {
+            width: 240px;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 250, 221);
+            border: 1px solid rgb(9, 58, 133);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .card h2,
+        .card h3 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .font-small {
+            font-size: small;
+        }
+
+        .font-large {
+            font-size: large;
+        }
+
+        .font-2x-large {
+            font-size: 1em;
+        }
+    </style>
+    <div class="nav">
+        <h1 class="titulo"><b>Classificados</b></h1>
+    </div>
+    <br>
+    <hr>
+    </hr>
     <div class="container">
-        
-        <img src="carro.jpg" height="200" weidth="200"> 
-        <img src="imagem venda imovel.jpg" height="200" weidth="200">
-        <img src="previsao-de-tempo.jpg" height="200" weidth="200">
-        <img src="vaga de emprego.jpg" height="200" weidth="200">
+        <div class="card">
+            <div>
+                <h2> Vendo carro</h2>
+                <p class="font-large">Garanta já o seu veículo nessa <b>promoção</b> imperdível aonde o seu automóvel sai de
+                    <s>R$20,000</s> por apenas R$13,500. Parcele em até 10 vezes sem juros ou pague á vista e garanta um
+                    desconto na revisão geral do veículo.
+                </p>
+            </div> <img src="carro.jpg" height="200" weidth="200">
+            <div>
+                <p class="font-small"> 
+                    Para mais informações entrar em contato através do número: <i>
+                        <a href="https://wa.me/+5547984236589?text=Olá+tenho+interesse+no+veículo.">
+                            Número para contato
+                        </a>
+                    </i>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3> Vendo, alugo ou faço permuta</h3>
+            </div> <img src="imagem venda imovel.jpg" height="200" weidth="200">
+            <div>
+                <p class="font-large"> <u>Normas obrigatórias da viznhança: </u> </p>
+                <ul class="font-large">
+                    <li>Proíbido animais</li>
+                    <li>Proíbido som alto depois das 22h</li>
+                    <li>Obrigatório a instalação de sistema de monitroramento</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3> Previsão do tempo da semana</h3>
+            </div>
+            <img src="previsao-de-tempo.jpg" height="200" weidth="200">
+            <div>
+                <ul class="font-large">
+                    <li><b>Sexta-feira</b>
+                        <ul class="font-large">
+                            <li>Umidade: 71%</li>
+                            <li>Sensação térmica:29C</li>
+                        </ul>
+                    </li>
+                    <li><b>Sábado</b>
+                        <ul class="font-large">
+                            <li>Umidade: 58%</li>
+                            <li>Sensação térmica: 30C</li>
+                        </ul>
+                    </li>
+                    <li><b>Domingo</b>
+                        <ul class="font-large">
+                            <li>Velocidade dos ventos: 15km/h</li>
+                            <li>Nível de precipitação: 9mm</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>Vaga de emprego</h3>
+                <p> <mark> Contrata-se funcionários para cargo de administração na prefeitura </mark></p>
+                <h5>Pré requisitos para o cargo:</h5>
+                <ol class="font-large">
+                    <li>Ensino médio completo</li>
+                    <li>Ser maior de idade</li>
+                    <li>Experiência comprovada na área</li>
+                </ol>
+            </div>
+            <img src="vaga de emprego.jpg" height="200" weidth="200">
+        </div>
 
     </div>
 </body>
+
 </html>
